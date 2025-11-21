@@ -28,21 +28,21 @@ const AboutCompany = () => {
 
   const keyMembers = [
     {
-      name: "Trần Anh Khôi",
-      position: "Chủ tịch - Người sáng lập",
-      description: "Người sáng lập và dẫn dắt Hitek Software với tầm nhìn trở thành công ty phần mềm hàng đầu thế giới",
+      name: "Oh Sean Beom",
+      position: "Giám đốc kinh doanh tại Hàn Quốc",
+      description: "10+ năm kinh nghiệm phát triển mobile app/web.",
       image: s2
     },
     {
-      name: "Nguyễn Văn A",
-      position: "CEO",
-      description: "15 năm kinh nghiệm trong lĩnh vực công nghệ và khởi nghiệp",
+      name: "Lê Quốc Vũ",
+      position: "Giám đốc công nghệ công ty Hitek Software",
+      description: "7+ năm kinh nghiệm phát triển phần mềm và thiết kế hệ thống.",
       image: s3
     },
     {
-      name: "Trần Thị B",
-      position: "CTO",
-      description: "Chuyên gia về kiến trúc hệ thống và phát triển phần mềm",
+      name: "Lâm Thứ Tiên",
+      position: "Giám đốc công ty Hitek Capital",
+      description: "Sáng lập và là Chủ tịch HĐQT Công ty cổ phần Đầu tư Công nghệ số Rồng Việt (Rovi Group).",
       image: s4
     }
   ];
@@ -50,11 +50,11 @@ const AboutCompany = () => {
   const activities = [
     {
       image: photo,
-      title: "Phát Triển Sản Phẩm"
+      title: "Hoạt Động Cộng Đồng"
     },
     {
       image: photo2, 
-      title: "Đào Tạo & Mentor"
+      title: "Hoạt Động Cộng Đồng"
     },
     {
       image: photo3,
@@ -62,15 +62,15 @@ const AboutCompany = () => {
     },
     {
       image: photo4,
-      title: "Hợp Tác Quốc Tế"
+      title: "Hoạt Động Cộng Đồng"
     },
     {
-      image: "/api/placeholder/413/250",
-      title: "Nghiên Cứu & Phát Triển"
+      image: photo,
+      title: "Hoạt Động Cộng Đồng"
     },
     {
-      image: "/api/placeholder/413/250",
-      title: "Sự Kiện Công Nghệ"
+      image: photo1,
+      title: "Hoạt Động Cộng Đồng"
     }
   ];
 

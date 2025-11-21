@@ -16,8 +16,8 @@ const Team = () => {
       image: s1,
       initials: "TAK",
       bio: "Với hơn 15 năm kinh nghiệm trong ngành công nghệ, anh Khôi đã dẫn dắt công ty đạt được nhiều thành tựu đáng tự hào.",
-      email: "trananhkhoi@hitek.com.vn",
-      phone: "0123 456 789",
+      email: "...",
+      phone: "...",
       facebook: "https://facebook.com"
     },
     {
@@ -30,8 +30,8 @@ const Team = () => {
       - Đảm nhận trách nhiệm chính trong quản lý tiến độ, lên kế hoạch về timeline, budget, nhân sự.<br />
       - Quản lý team nước ngoài từ xa, lên kế hoạch phát triển bản thân cho nhân viên, quản lý khối lượng công việc, tổ chức các tài liệu kỹ thuật, phát triển dự án.<br />
       - Kinh nghiệm làm việc trong môi trường quốc tế: Nhật, Việt Nam, Hàn Quốc, Châu Âu</>,
-      email: "tranthib@hitek.com.vn",
-      phone: "0123 456 790",
+      email: "...",
+      phone: "...",
       facebook: "https://facebook.com"
     },
     {
@@ -46,8 +46,8 @@ const Team = () => {
       - Giải nhất cuộc thi phần mềm mã nguồn mở 2015.<br />
       - Giải nhì cuộc thi lập trình quốc tế ACM/ICPC 2014.<br />
       - Chịu trách nhiệm xây dựng và thiết kế kiến trúc hệ thống phần mềm, định hướng kĩ thuật.</>,
-      email: "levanc@hitek.com.vn",
-      phone: "0123 456 791",
+      email: "...",
+      phone: "...",
       facebook: "https://facebook.com"
     },
     {
@@ -60,8 +60,8 @@ const Team = () => {
       - Từng đảm nhận vị trí Tổng giám đốc Công ty cổ phần đầu tư Thengroup.<br />
       - Từng đảm nhận vị trí Giám đốc thương mại Công ty TNHH Dịch vụ Mọi Người Cùng Vui.<br />
       - Từng là Nhà sáng lập và điều hành chuỗi hệ thống Điện thoại bình dân (2012).</>,
-      email: "phamthid@hitek.com.vn",
-      phone: "0123 456 792",
+      email: "...",
+      phone: "...",
       facebook: "https://facebook.com"
     }
   ];
