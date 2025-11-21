@@ -1,12 +1,13 @@
 {
   "name": "vite_react_shadcn_ts",
+  "homepage": "https://minhtris2005.github.io/HITEK_CLONE",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "build:dev": "vite build --mode development",
+    "build": "vite build --base=/HITEK_CLONE/",
+    "build:dev": "vite build --mode development --base=/HITEK_CLONE/",
     "lint": "eslint .",
     "preview": "vite preview"
   },
