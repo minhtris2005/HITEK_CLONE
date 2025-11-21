@@ -1,0 +1,345 @@
+/* src/components/admin/ProjectList.css */
+.project-list-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9fafb 0%, #e0e7ff 100%);
+  padding: 24px;
+}
+
+.project-list-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.project-list-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.project-list-header {
+  background: linear-gradient(135deg, #3b82f6 0%, #7c3aed 100%);
+  padding: 24px;
+}
+
+.project-list-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.project-list-subtitle {
+  color: #dbeafe;
+  margin-top: 4px;
+}
+
+.project-list-add-btn {
+  background: white;
+  color: #3b82f6;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.project-list-add-btn:hover {
+  background: #eff6ff;
+}
+
+.project-list-content {
+  padding: 24px;
+}
+
+.project-list-empty {
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.project-list-empty-icon {
+  font-size: 4rem;
+  color: #9ca3af;
+  margin-bottom: 16px;
+}
+
+.project-list-empty-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.project-list-empty-text {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.project-list-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.project-list-thead {
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.project-list-th {
+  padding: 16px;
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  vertical-align: middle;
+}
+
+.project-list-th-center {
+  text-align: center;
+}
+
+.project-list-tbody tr {
+  border-bottom: 1px solid #f3f4f6;
+  transition: background-color 0.2s;
+}
+
+.project-list-tbody tr:hover {
+  background: #f9fafb;
+}
+
+.project-list-td {
+  padding: 16px;
+  vertical-align: top;
+}
+
+.project-list-td-middle {
+  vertical-align: middle;
+}
+
+.project-list-project-cell {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.project-list-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #e5e7eb;
+  flex-shrink: 0;
+}
+
+.project-list-project-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.project-list-project-title {
+  font-weight: 600;
+  color: #1f2937;
+  word-break: break-word;
+}
+
+.project-list-project-slug {
+  font-size: 0.875rem;
+  color: #6b7280;
+  word-break: break-word;
+  margin-top: 4px;
+}
+
+.project-list-client {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+.project-list-badge {
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.project-list-badge-featured {
+  background: #fef3c7;
+  color: #92400e;
+  margin-top: 8px;
+}
+
+.project-list-badge-status-completed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.project-list-badge-status-in-progress {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.project-list-badge-status-planned {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.project-list-badge-published {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.project-list-badge-private {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.project-list-date {
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-align: left;
+}
+
+.project-list-date-updated {
+  font-size: 0.75rem;
+  color: #059669;
+}
+
+.project-list-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.project-list-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.project-list-btn-edit {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.project-list-btn-edit:hover {
+  background: #bfdbfe;
+}
+
+.project-list-btn-delete {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.project-list-btn-delete:hover {
+  background: #fecaca;
+}
+
+.project-list-summary {
+  margin-top: 24px;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.project-list-summary-text {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.project-list-summary-link {
+  color: #3b82f6;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.project-list-summary-link:hover {
+  color: #1d4ed8;
+}
+
+.project-list-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 256px;
+  font-size: 1.125rem;
+  color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-list-container {
+    padding: 16px;
+  }
+  
+  .project-list-header {
+    padding: 16px;
+  }
+  
+  .project-list-content {
+    padding: 16px;
+  }
+  
+  .project-list-actions {
+    flex-direction: column;
+  }
+  
+  .project-list-project-cell {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .project-list-image {
+    margin-bottom: 8px;
+  }
+}
+/* Thêm vào ProjectList.css */
+.project-list-header-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-list-header-content {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .project-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .project-list-header-content {
+    margin-bottom: 0;
+  }
+  
+  .project-list-summary-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-list-summary-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+}

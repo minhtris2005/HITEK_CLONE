@@ -1,0 +1,377 @@
+/* src/components/admin/ProjectForm.css */
+.project-form-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9fafb 0%, #e0e7ff 100%);
+  padding: 32px 16px;
+}
+
+.project-form-wrapper {
+  max-width: 896px;
+  margin: 0 auto;
+}
+
+.project-form-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.project-form-header {
+  background: linear-gradient(135deg, #3b82f6 0%, #7c3aed 100%);
+  padding: 24px;
+  color: white;
+}
+
+.project-form-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+}
+
+.project-form-subtitle {
+  color: #dbeafe;
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.project-form-content {
+  padding: 24px;
+}
+
+.project-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .project-form-grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.project-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-form-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.project-form-label-required::after {
+  content: " *";
+  color: #ef4444;
+}
+
+.project-form-input,
+.project-form-textarea,
+.project-form-select {
+  padding: 12px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+  background: white;
+}
+.project-form-textarea{
+    color: gray;
+}
+.project-form-input:focus,
+.project-form-textarea:focus,
+.project-form-select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+.project-form-input{
+    color: gray;
+}
+.project-form-textarea {
+  resize: vertical;
+  min-height: 80px;
+  font-family: inherit;
+}
+
+.project-form-textarea-large {
+  min-height: 120px;
+}
+
+.project-form-select {
+    color: black;
+    cursor: pointer;
+}
+
+.project-form-checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.project-form-checkbox {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #d1d5db;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project-form-checkbox:checked {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.project-form-checkbox-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+}
+
+.project-form-image-preview {
+  margin-top: 8px;
+}
+
+.project-form-preview {
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #e5e7eb;
+}
+
+.project-form-preview-text {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.project-form-actions {
+  display: flex;
+  gap: 12px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .project-form-actions {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.project-form-btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.project-form-btn-primary {
+  background: linear-gradient(135deg, #3b82f6 0%, #7c3aed 100%);
+  color: white;
+  flex: 1;
+}
+
+.project-form-btn-primary:hover {
+  opacity: 0.9;
+}
+
+.project-form-btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.project-form-btn-secondary {
+  background: #6b7280;
+  color: white;
+}
+
+.project-form-btn-secondary:hover {
+  background: #4b5563;
+}
+
+.project-form-btn-outline {
+  background: transparent;
+  border: 2px solid #d1d5db;
+  color: #374151;
+}
+
+.project-form-btn-outline:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.project-form-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 1.125rem;
+  color: #6b7280;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-form-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3b82f6;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.project-form-help-text {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+/* Thêm vào ProjectForm.css */
+.project-form-upload-area {
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: #f9fafb;
+}
+
+.project-form-upload-area:hover {
+  border-color: #3b82f6;
+  background: #f0f9ff;
+}
+
+.project-form-upload-area.dragover {
+  border-color: #3b82f6;
+  background: #dbeafe;
+}
+
+.project-form-upload-icon {
+  font-size: 2rem;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.project-form-upload-text {
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.project-form-upload-btn {
+  background: #3b82f6;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.2s;
+}
+
+.project-form-upload-btn:hover {
+  background: #2563eb;
+}
+
+.project-form-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.project-form-gallery-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-form-gallery-img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.project-form-gallery-remove {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: rgba(239, 68, 68, 0.9);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+
+.project-form-gallery-remove:hover {
+  background: #dc2626;
+}
+
+.project-form-file-input {
+  display: none;
+}
+
+.project-form-preview-container {
+  margin-top: 16px;
+}
+
+.project-form-featured-preview {
+  max-width: 200px;
+  border-radius: 8px;
+  border: 2px solid #e5e7eb;
+}
+
+.project-form-upload-progress {
+  margin-top: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  height: 4px;
+  overflow: hidden;
+}
+
+.project-form-upload-progress-bar {
+  height: 100%;
+  background: #3b82f6;
+  transition: width 0.3s;
+}
+
+.project-form-upload-error {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: 8px;
+}

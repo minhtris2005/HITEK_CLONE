@@ -1,0 +1,399 @@
+.navbar {
+  background: black;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 50;
+}
+
+.navbar.dark {
+  background: #0f0f0f;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-desktop {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar-link {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.navbar-link::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+}
+.navbar.dark .navbar-link {
+  color: #e5e7eb;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  color: #0d6efd;
+}
+
+.navbar.dark .navbar-link:hover,
+.navbar.dark .navbar-link.active {
+  color: #60a5fa;
+}
+
+.navbar-item {
+  position: relative;
+}
+
+/* About dropdown */
+.navbar-dropdown {
+  position: absolute;
+  top: 130%;
+  left: 0;
+  min-width: 180px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  z-index: 100;
+}
+.navbar.dark .navbar-dropdown {
+  background: #1f2937;
+  border: 1px solid #374151;
+}
+/* Về chúng tôi */
+.navbar-dropdown-item {
+  padding: 8px 16px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.dark .navbar-dropdown-item {
+  color: #ffffff;
+}
+
+.navbar-dropdown-item:hover {
+  background: #f0f0f0;
+}
+
+.navbar.dark .navbar-dropdown-item:hover {
+  background: #374151;
+}
+
+/* Dịch vụ */
+/* Services mega menu */
+.services-mega-menu {
+  position: absolute;
+  top: 130%;
+  left: -39.5vw;
+  width: 100vw;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  z-index: 100;
+  color: black;
+  border: 1px solid #e5e7eb; /* Thêm viền nhẹ */
+}
+
+.navbar.dark .services-mega-menu {
+  background: #1a1a1a;
+  border: 1px solid #333333;
+}
+
+/* Đảm bảo tất cả chữ trong services đều màu trắng trong dark mode */
+.navbar.dark .services-mega-menu .service-title,
+.navbar.dark .services-mega-menu .service-text,
+.navbar.dark .services-mega-menu .service-card button {
+  color: #ffffff;
+}
+
+.navbar.dark .services-mega-menu .service-text {
+  color: #cccccc;
+}
+
+/* Services Scroll Container */
+.services-scroll-container {
+  overflow-x: auto;
+  cursor: grab;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.services-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.services-scroll-container:active {
+  cursor: grabbing;
+}
+
+.services-scroll-content {
+  display: flex;
+  gap: 16px;
+  padding: 0 1rem;
+  user-select: none;
+}
+
+.service-card {
+  opacity: 1 !important;
+  position: relative; /* Thêm vào */
+  min-height: 200px; /* Đảm bảo chiều cao tối thiểu */
+  flex: 0 0 auto;
+  min-width: 180px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+.service-btn {
+  margin-top: auto !important; /* Đẩy nút xuống dưới cùng */
+  align-items: center;
+  margin-bottom: 16px; /* Cách bottom 16px */
+}
+
+.navbar.dark .service-card {
+  background: #2d2d2d;
+}
+
+.service-card.active {
+  opacity: 1;
+  transform: none; /* Bỏ scale */
+  box-shadow: none; /* Bỏ shadow */
+  background: #f8f9fa; /* Giữ màu nền bình thường */
+   border-color: transparent !important;
+}
+.service-card:first-child {
+  /* Reset style đặc biệt */
+  border-color: transparent !important;
+  transform: none !important;
+  opacity: 0.8 !important;
+}
+
+.service-card:first-child:hover {
+  border-color: #0d6efd !important;
+  transform: translateY(-2px) !important;
+}
+.navbar.dark .service-card.active {
+   background: #2d2d2d !important;
+  border-color: transparent !important;
+}
+.service-card.inactive {
+  opacity: 0.8;
+}
+
+.service-card:hover {
+  border-color: #0d6efd !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
+}
+/* Đặc biệt cho card active khi hover */
+.service-card.active:hover {
+  border-color: #0d6efd !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
+  background: #f8f9fa !important;
+}
+.navbar.dark .service-card.active:hover {
+  background: #2d2d2d !important;
+  border-color: #3b82f6 !important;
+}
+.navbar.dark .service-card:hover {
+  border-color: #3b82f6 !important;
+}
+
+.service-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #1f2937;
+}
+
+.navbar.dark .service-title {
+  color: #ffffff;
+}
+
+.service-text {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #6b7280;
+}
+
+.navbar.dark .service-text {
+  color: #cccccc;
+}
+
+/* Chế độ sáng - Navigation dots nổi bật */
+.services-navigation {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  min-height: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 1.5rem auto 0 auto;
+  max-width: 200px;
+}
+
+.nav-dot {
+  background-color: black; /* Màu xanh dương */
+  opacity: 0.3;
+}
+
+.navbar.dark .nav-dot {
+  background-color: #6b7280;
+}
+
+.nav-dot.active {
+  opacity: 1;
+  width: 20px;
+  border-radius: 10px;
+  background-color: #0d6efd;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.4);
+}
+
+.navbar.dark .nav-dot.active {
+  background-color: #3b82f6;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+}
+.navbar.dark .nav-dot:hover {
+  background-color: #3b82f6;
+}
+.nav-dot:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+  background-color: #0d6efd;
+}
+/* Chế độ sáng - Navigation dots */
+.services-mega-menu .services-navigation {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  min-height: 20px;
+}
+/* Chế độ sáng - Nav dot mặc định màu đen, hover màu xanh */
+.services-mega-menu .nav-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background-color: #000000 !important; /* Màu đen khi chưa hover */
+  opacity: 0.4;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.services-mega-menu .nav-dot.active {
+  opacity: 1;
+  width: 20px;
+  border-radius: 10px;
+  background-color: #0d6efd !important; /* Màu xanh khi active */
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.4);
+}
+/* Chế độ sáng - Hover màu xanh */
+.services-mega-menu .nav-dot:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+  background-color: #0d6efd !important; /* Màu xanh khi hover */
+}
+
+/* Dark mode adjustments - Giữ nguyên dark mode */
+.navbar.dark .services-navigation {
+  background: rgba(26, 26, 26, 0.9);
+}
+
+/* Fix button trong dark mode */
+.navbar.dark .service-card button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+}
+
+.navbar.dark .service-card button:hover {
+  background-color: #2563eb;
+}
+
+/* Language selector */
+.navbar-language {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0 12px;
+  border-radius: 40px;
+  height: 40px;
+  width: 90px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.dark .navbar-language {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.navbar-language:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-language-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  margin-right: auto;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  color: white;
+}
+
+.navbar.dark .theme-toggle {
+  color: #e5e7eb;
+}
+.service-card.active {
+  /* Reset tất cả style */
+  opacity: 1 !important;
+  transform: none !important;
+  box-shadow: none !important;
+  background: #f8f9fa !important;
+  border-color: transparent !important;
+}
+
+.navbar.dark .service-card.active {
+  background: #2d2d2d !important;
+  border-color: transparent !important;
+}
