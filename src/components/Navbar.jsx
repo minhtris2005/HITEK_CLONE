@@ -183,13 +183,13 @@ const Navbar = () => {
                 onMouseLeave={() => setHoverAbout(false)}
               >
                 <button
-                  onClick={() => handleNavigation("/aboutcompany")}
+                  onClick={() => handleNavigation("/HITEK_CLONE/aboutcompany")}
                   className="navbar-dropdown-item"
                 >
                   Thông tin công ty
                 </button>
                 <button
-                  onClick={() => handleNavigation("/aboutus")}
+                  onClick={() => handleNavigation("/HITEK_CLONE/aboutus")}
                   className="navbar-dropdown-item"
                 >
                   Về chúng tôi

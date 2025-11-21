@@ -33,7 +33,7 @@ const App = () => (
         <Toaster />
         <Sonner />
 
-        <BrowserRouter>
+        <BrowserRouter basename="HITEK_CLONE">
           <ScrollToTop />
           <Routes>
             {/* Public Routes */}
